@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    overflow: hidden;
+    
+}
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/body\ background.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    background-attachment: fixed;
+    filter: brightness(50%) contrast(100%);
+}
+.header-content h2{
+    color: #de8511;
+    font-size: 6vmin;
+    text-align: center;
+    text-shadow: 2px 2px 2px #cd1414,5px 5px 2px rgb(32, 32, 33);
+}
+.header-content h1{
+    color: #5e2f2f;
+    font-size: 35px;
+    font-weight: bolder;
+    font-weight: bolder;
+    margin-top: 1.3rem;
+    margin-bottom: 4rem;
+    text-shadow: 2px 2px 2px #b9a704;
+}
+.header-content a{
+    color: #fff;
+    padding: 6px 20px 6px 20px;
+    border: 2px solid rgb(37, 36, 34);
+    background: rgb(0,0,0,0.6);
+    text-decoration: none;
+    border-radius: 10px;
+    margin-left: 220px;
+
+}
+.header-content a:hover{
+    background: rgb(121, 141, 141);
+}
+.header{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+
+}
+.info{
+    display: inline-block;
+    justify-content: last baseline;
+    align-items: baseline;
+}
+/* .info ul li {
+    list-style: none;
+    text-align:justify;
+    display: flex;
+} */
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content:space-around;
+    padding: 20px;
+    align-items: center;
+    background: rgb(0,0,0,0.5);
+}
+.navbar h1{
+    margin-left: -5px;
+}
+nav h1{
+    color:orange;
+    font-weight: 900;
+    font-size: 1.8rem;
+    display: flex;
+    text-shadow: 2px 3px 2px #b93a3a;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    padding: 3px 15px 3px 15px;
+
+}
+nav ul li:hover,.phone a:hover{
+    background: rgb(171, 126, 68);
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 5px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+.phone a{
+    text-decoration: none;
+    color: #fff;
+    padding: 3px 15px 3px 15px;
+    border: 1px solid ;
+    border-radius: 5px;
+}

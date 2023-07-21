@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    
+    <link rel="stylesheet" href="menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            
+        }
+        body{
+            /* background: darkcyan; */
+            background-image: url(/background.jpg);
+            background-repeat: no-repeat;
+            background-position:center;
+            background-size: cover;
+            font-family: 'Inconsolata', monospace;
+        }
+        .menu{
+            padding: 0 10px 30px 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+            grid-gap: 20px 40px;
+        }
+        .heading{
+            background:rgb(122, 96, 30);
+            color: #fff;
+            text-align: center;
+            padding: 30px 0 ;
+            grid-column: 1/-1;
+            text-align: center;
+            text-shadow: 5px 2px 5px  rgb(152, 32, 32);
+        }
+
+        .heading h1{
+            font-weight: 400;
+            font-size: 32px;
+            letter-spacing: 10px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .heading h3{
+            font-weight: 600;
+            font-size: 22px;
+            letter-spacing: 5px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .food-items{
+            display: grid;
+            position: relative;
+            grid-template-rows:auto 1fr ;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.6);
+            transition: .2s ease-in-out;
+        }
+        .food-items img{
+            position: relative;
+            width: 100%;
+            height: 280px;
+            border-radius: 15px 15px 0 0;
+            cursor: pointer;
+        }
+        h1{
+            grid-column: 1/-1;
+            text-align: center;
+        }
+        .details{
+            padding: 20px 10px;
+            display: grid;
+            grid-template-rows: auto 1fr 50px;
+            grid-row-gap: 15px;
+        }
+        .details-sub{
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        .details-sub h5{
+            font-weight: 600;
+            font-size: 18px;
+        }
+        .price{
+            text-align: center;
+
+        }
+        .details p{
+            color: rgb(41, 49, 2);
+            font-size: 15px;
+            line-height: 28px;
+            font-weight: 600;
+            align-self:stretch;
+        }
+        .details button{
+            background: rgb(84, 51, 51);
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 5px;
+            /* width: 180px; */
+            cursor: pointer;
+        }
+        .details button:hover{
+            background-color: rgb(244, 49, 49);
+        }
+
+    </style>
+</head>
+<body>
+   <div class="menu">
+    <div class="heading">
+        <h1>Devuuz Resturant</h1>
+        <h3>&mdash;&mdash;Menu&mdash;&mdash;</h3>
+    </div>
+    <div class="food-items">
+        <img src="/burgerimg.jpg" alt="">
+        <div class="details">
+            <div class="details-sub">
+                <h5>Burger</h5>
+                <h5 class="price">Rs 110</h5>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, fugit!</p>
+            <button>Add to cart</button>
+        </div>
+
+    </div>
+
+    <div class="food-items">
+        <img src="/Food-Pizza-Basil-Tomato.webp" alt="">
+        <div class="details">
+            <div class="details-sub">
+                <h5>Pizza</h5>
+                <h5 class="price">Rs 300</h5>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, fugit!</p>
+            <button>Add to cart</button>
+        </div>
+
+    </div>
+
+    <div class="food-items">
+        <img src="/noodles.webp" alt="">
+        <div class="details">
+            <div class="details-sub">
+                <h5>Noodles</h5>
+                <h5 class="price">Rs 120</h5>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, fugit!</p>
+            <button>Add to cart</button>
+        </div>
+
+    </div>
+
+    <div class="food-items">
+        <img src="/puri.jpg" alt="">
+        <div class="details">
+            <div class="details-sub">
+                <h5>Poori</h5>
+                <h5 class="price">Rs 50</h5>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, fugit!</p>
+            <button>Add to cart</button>
+        </div>
+
+    </div>
+
+    <div class="food-items">
+        <img src="/sandvich.webp" alt="">
+        <div class="details">
+            <div class="details-sub">
+                <h5>Sandvich</h5>
+                <h5 class="price">Rs 90</h5>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, fugit!</p>
+            <button>Add to cart</button>
+        </div>
+
+    </div>
+
+    <div class="food-items">
+        <img src="/Idli.jpg" alt="">
+        <div class="details">
+            <div class="details-sub">
+                <h5>Idli</h5>
+                <h5 class="price">Rs 70</h5>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, fugit!</p>
+            <button>Add to cart</button>
+        </div>
+
+    </div>
+
+    <div class="food-items">
+        <img src="/pasta-penne-meat-photography.jpg" alt="">
+        <div class="details">
+            <div class="details-sub">
+                <h5>White Pasta</h5>
+                <h5 class="price">Rs 180</h5>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, fugit!</p>
+            <button>Add to cart</button>
+        </div>
+
+    </div>
+
+    <div class="food-items">
+        <img src="/samosa.jpg" alt="">
+        <div class="details">
+            <div class="details-sub">
+                <h5>Samosa</h5>
+                <h5 class="price">Rs 40</h5>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, fugit!</p>
+            <button>Add to cart</button>
+        </div>
+
+    </div>
+
+    <div class="food-items">
+        <img src="/soup.jpg" alt="">
+        <div class="details">
+            <div class="details-sub">
+                <h5>Tomato Soup</h5>
+                <h5 class="price">Rs 110</h5>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, fugit!</p>
+            <button>Add to cart</button>
+        </div>
+
+    </div>
+
+    <div class="food-items">
+        <img src="/dosa.jpg" alt="">
+        <div class="details">
+             <div class="details-sub">
+                <h5> Paper Dosa</h5>
+                <h5 class="price">Rs 90</h5>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, fugit!</p>
+            <button>Add to cart</button>
+        </div>
+
+    </div>
+
+    <div class="food-items">
+        <img src="/pestry.webp" alt="">
+        <div class="details">
+            <div class="details-sub">
+                <h5>Pestry</h5>
+                <h5 class="price">Rs 60</h5>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, fugit!</p>
+            <button>Add to cart</button>
+        </div>
+
+    </div>
+    <div class="food-items">
+        <img src="/images.jpg" alt="">
+        <div class="details">
+            <div class="details-sub">
+                <h5>Sweets</h5>
+                <h5 class="price">Rs 140</h5>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, fugit!</p>
+            <button>Add to cart</button>
+        </div>
+
+    </div>
+   </div> 
+</body>
+</html>
